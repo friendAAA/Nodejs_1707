@@ -8,8 +8,8 @@ function perimeter(radius) {
     return PI * radius * 2;
 }
 
-exports.test = area; // key = value
-exports.perimeter = perimeter;
+module.exports.test = area; // key = value
+module.exports.perimeter = perimeter;
 
 // console.log(area(1.2));
 // console.log(perimeter(1.2));
