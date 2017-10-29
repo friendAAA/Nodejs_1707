@@ -8,9 +8,15 @@ const reader = new readline.Interface({
 reader.question('input your name: ', (line) => {
     console.log(line);
     reader.close();
-    process.exit(0);
+    // process.exit(0);
+    // process.stdin.destroy();
 });
 
+// process.on('exit', () => {
+//
+// });
+
 /*
+Ctrl + Shift + F12
 * readline read current file, output?
 * */
