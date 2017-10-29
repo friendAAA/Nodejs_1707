@@ -8,6 +8,7 @@ const reader = new readline.Interface({
 reader.question('input your name: ', (line) => {
     console.log(line);
     reader.close();
+    process.exit(0);
 });
 
 /*
