@@ -1,11 +1,11 @@
 const fs = require('fs');
 const readline = require('readline');
 
-let file = console.log(process.argv[1]);
+let file = process.argv[1];
+
 readline.createInterface({
-    input: fs.createReadStream('question.js'),
-    output: process.stdout,
-    terminal: true
+    input: fs.createReadStream(file),
+    terminal: false
 }).on('line', (line) => {
     console.log(line);
 });
