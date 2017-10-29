@@ -3,7 +3,7 @@ const fs = require('fs');
 const Console = require('console').Console;
 
 const out = fs.createWriteStream('./out.log');
-const err = fs.createWriteStream('./err.log');
+const out = fs.createWriteStream('./err.log');
 
 const logger = new Console(out, err);
 
